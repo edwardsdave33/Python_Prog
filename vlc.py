@@ -28,8 +28,8 @@ if today in text:
     from cryptography.fernet import Fernet
 
     key = b'UjuWAWXM0wCYJBs1nTaOQYID0WjMsa7nahFdp4eubMw='
-    output_file = '/users/david/k2e/app_pwd.encrypted'
-    output_file2 = '/users/david/k2e/app_pwd.decrypted'
+    output_file = 'path/app_pwd.encrypted'
+    output_file2 = 'path/app_pwd.decrypted'
 
     with open(output_file, 'rb') as f:
         data = f.read()
@@ -45,8 +45,8 @@ if today in text:
         contents = f.read()
         gmail_password = contents
     os.remove(output_file2)
-    gmail_user = 'david.edwards@k2esec.com'
-    to = ['david.alex.edwards@gmail.com']
+    gmail_user = 'email'
+    to = ['email']
     sent_from = gmail_user
     subject = 'VLC Security Update'
     body = today + " " + "VLC Update"
